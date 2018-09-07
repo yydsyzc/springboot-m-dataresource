@@ -35,7 +35,7 @@ public class ScheduledTask {
      * 方法上添加@Scheduled 配置参数fixedRate = 6000（6秒）
      * 就可以实现定时任务
      */
-    @Scheduled(fixedRate = 6000)
+    @Scheduled(fixedRate = 30000)
     public void reportCurrentTime() {
         System.out.println("现在时间：" + dateFormat.format(new Date()));
     }

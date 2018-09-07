@@ -115,6 +115,12 @@
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
+        <!--mongodb-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+
         <!-- Junit -->
         <dependency>
             <groupId>junit</groupId>
@@ -126,9 +132,11 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-maven-plugin</artifactId> <configuration>
-                <fork>true</fork>
-            </configuration>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                    <configuration>
+                        <fork>true</fork>
+                    </configuration>
             </plugin>
 
         </plugins>
